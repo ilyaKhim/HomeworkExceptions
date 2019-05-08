@@ -1,0 +1,22 @@
+public class Main {
+/*    public static String getWorkingHours(DaysOfWeek daysOfWeek){
+        String result = "";
+        for(int i = daysOfWeek.ordinal(); i<DaysOfWeek.values().length; i++) {
+            result+= DaysOfWeek.values()[i].getCondition();
+            break;
+        }
+        return result;
+    }*/
+
+
+    // вариант покороче
+    public static String getWorkingHours(DaysOfWeek daysOfWeek){
+        String result = DaysOfWeek.values()[daysOfWeek.ordinal()].getCondition();
+                return result;
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println(getWorkingHours(DaysOfWeek.WEDNESDAY));
+    }
+}
