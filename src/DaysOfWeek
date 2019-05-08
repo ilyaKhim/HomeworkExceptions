@@ -1,0 +1,23 @@
+
+
+public enum DaysOfWeek {
+    MONDAY("осталось 40 часов на этой неделе"),
+    TUESDAY("осталось 32 часов на этой неделе"),
+    WEDNESDAY("осталось 24 часов на этой неделе"),
+    THURSDAY("осталось 16 часов на этой неделе"),
+    FRIDAY("осталось 8 часов на этой неделе"),
+    SATURDAY("Вы на законном отдыхе!"),
+    SUNDAY("Вы на законном отдыхе, но завтра вам на работу!");
+
+
+
+    private String condition;
+
+    DaysOfWeek(String condition) {
+        this.condition = condition;
+    }
+
+    public  String getCondition() {
+        return condition;
+    }
+}
